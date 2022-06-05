@@ -1,0 +1,128 @@
+body {
+  font-family: "Roboto", sans-serif;
+}
+.card {
+  width: 100%;
+  max-width: 500px;
+  margin: 30px auto;
+  background: radial-gradient(
+    343px at 46.3% 47.5%,
+    rgb(252, 252, 252) 0%,
+    rgb(248, 248, 248) 72.9%
+  );
+  border: 1px solid rgb(77, 77, 77);
+  border-radius: 10px;
+}
+form {
+  padding-bottom: 15px;
+  padding-top: 5px;
+}
+input {
+  width: 100%;
+  border: 1px solid rgb(35, 75, 66);
+  border-radius: 4px;
+  padding: 5px;
+}
+#col-submit {
+  padding: 0;
+}
+.submit {
+  padding-left: 10px;
+  padding-right: 10px;
+  color: rgb(77, 77, 77);
+  background-color: rgb(215, 234, 229);
+  transition: 200ms all ease-in-out;
+}
+.submit:hover {
+  background-color: rgb(175, 224, 211);
+}
+#col-position-button {
+  padding-top: 5px;
+  padding-left: 0;
+  padding-right: 0;
+}
+#current-position {
+  font-size: 16px;
+  line-height: 24px;
+  color: rgb(77, 77, 77);
+  background-color: rgb(215, 234, 229);
+  border: 1px solid rgb(35, 75, 66);
+  border-radius: 4px;
+  margin-left: 15px;
+  padding: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
+  transition: 200ms all ease-in-out;
+}
+#current-position:hover {
+  background-color: rgb(175, 224, 211);
+}
+
+h1 {
+  font-size: 22px;
+  line-height: 26px;
+  margin-bottom: 0;
+}
+ul {
+  list-style-type: none;
+  padding-left: 0;
+  margin: 0;
+}
+li {
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 400;
+  color: #70757a;
+}
+p {
+  margin: 0;
+}
+a {
+  color: rgb(62, 115, 103);
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+
+.date {
+  font-size: 18px;
+  text-align: center;
+}
+.temperature,
+.description {
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 400;
+  color: #70757a;
+  text-align: center;
+}
+.emoji {
+  font-size: 35px;
+  text-align: center;
+}
+
+#temp-today {
+  color: black;
+  font-size: 42px;
+  line-height: 48px;
+  text-align: right;
+}
+.units {
+  font-size: 16px;
+  position: relative;
+  top: -20px;
+  text-align: right;
+}
+.followingDays {
+  opacity: 0.9;
+}
+.footnote {
+  padding: 0;
+  margin: 0;
+}
+.source-code {
+  margin: 0 auto;
+  padding: 10px;
+  font-size: 12px;
+}
