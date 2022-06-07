@@ -34,6 +34,9 @@ let unit = "metric";
 
 function formatDate(date) {
   let currentDate = date.getDate();
+  if (currentDate < 10) {
+    currentDate = `0${currentDate}`;
+  }
   let currentMonth = date.getMonth();
   if (currentMonth < 10) {
     currentMonth = `0${currentMonth + 1}`;
@@ -55,10 +58,6 @@ function formatTime(time) {
   let formattedTime = `${currentDay} ${currentHour}:${currentMinutes}`;
   return formattedTime;
 }
-
-//update the time and date to today
-currentTime.innerHTML = formatTime(now);
-currentDate.innerHTML = formatDate(now);
 
 //temperature settings
 // TO UPDATE BECAUSE ITS BROKEN AHEM
@@ -96,8 +95,7 @@ function onInputCityName(event) {
 searchCityForm.addEventListener("submit", onInputCityName);
 
 //we want the temperature dsplayed to = to city searched
-//
-//add other info, like precipitation, wind etc, humidity
+
 function showTemperature(response) {
   let temperature = Math.round(response.data.main.temp);
   tempToday.innerHTML = temperature;
@@ -128,4 +126,12 @@ function determineCurrentCity(response) {
   axios.get(apiUrl).then(showTemperature);
 }
 
-search("Monaco");
+search("Annecy");
+
+//fix the fahrenheit/celsius
+//add other info, like wind, humidity
+//add country next to the city displayed
+//add theme depending on whether it's day or night
+//time displayed = time where i am, or time where i'm searching the weather ??
+//  probably where i'm searching the weather, makes more sense
+//

@@ -58,37 +58,38 @@
           </div>
 
           <div class="row">
-            <div class="col-6">
+            <div class="col-5">
+              <span class="emoji">
+                <img
+                  src="https://ssl.gstatic.com/onebox/weather/64/partly_cloudy.png"
+                  alt=""
+                />
+              </span>
+              <span class="">
+                <span id="temp-today"></span>
+                <span class="units">
+                  <a href="#" id="celsius-link">°C</a>
+                  <span>|</span>
+                  <a href="#" id="fahrenheit-link">°F</a>
+                </span>
+              </span>
+            </div>
+            <div class="col-7 general-infos">
               <h1 id="displayed-city"></h1>
               <ul>
                 <li>
                   <span id="current-time"></span>
                 </li>
-                <li id="current-date"></li>
+                <!-- <li id="current-date"></li> -->
+                <li id="description-today"></li>
               </ul>
-            </div>
-
-            <div class="col-2 emoji">
-              <img
-                src="https://ssl.gstatic.com/onebox/weather/64/partly_cloudy.png"
-                alt=""
-              />
-            </div>
-            <div class="col-4">
-              <span id="temp-today"></span>
-              <span class="units">
-                <a href="#" id="celsius-link">°C</a>
-                <span>|</span>
-                <a href="#" id="fahrenheit-link">°F</a>
-              </span>
-              <div id="description-today"></div>
             </div>
           </div>
 
           <hr />
           <div class="row followingDays">
             <div class="col date">
-              <span id="next-day1">Tuesday</span>
+              <span id="next-day1"></span>
 
               <div class="emoji">
                 <img
@@ -100,7 +101,7 @@
               <div class="description">Sun</div>
             </div>
             <div class="col date">
-              <span id="next-day2">Wednesday</span>
+              <span id="next-day2"></span>
 
               <div class="emoji">
                 <img
@@ -112,7 +113,7 @@
               <div class="description">Light rain</div>
             </div>
             <div class="col date">
-              <span id="next-day3">Thursday</span>
+              <span id="next-day3"></span>
               <div class="emoji">
                 <img
                   src="https://ssl.gstatic.com/onebox/weather/64/rain_s_cloudy.png"
@@ -123,7 +124,7 @@
               <div class="description">Rain</div>
             </div>
             <div class="col date">
-              <span id="next-day4">Friday</span>
+              <span id="next-day4"></span>
               <div class="emoji">
                 <img
                   src="https://ssl.gstatic.com/onebox/weather/64/thunderstorms.png"
@@ -134,7 +135,7 @@
               <div class="description">Stormy</div>
             </div>
             <div class="col date">
-              <span id="next-day5">Saturday</span>
+              <span id="next-day5"></span>
               <div class="emoji">
                 <img
                   src="https://ssl.gstatic.com/onebox/weather/64/sunny.png"
